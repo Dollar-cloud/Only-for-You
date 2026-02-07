@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Valentine — A Moment Just For You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page" id="page">
+    <!-- Section 1: Hero (full screen) -->
+    <section class="section hero" id="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hearts-container" id="hearts-container" aria-hidden="true"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">💖 Your Name Appears Here 💖</h1>
+        <p class="hero-subtext">Someone made this just for you</p>
+        <p class="hero-tease">Something special is waiting below...</p>
+        <a href="#message" class="hero-scroll-btn" id="hero-scroll-btn" aria-label="See your special message">Click here — your special message is waiting 💕</a>
+        <p class="hero-scroll-hint">Scroll to see all your messages</p>
+        <span class="hero-scroll-arrow" aria-hidden="true">↓</span>
+      </div>
+    </section>
+
+    <!-- Section 2: Emotional message (typewriter) -->
+    <section class="section message" id="message">
+      <h2 class="section-heading">Your first message</h2>
+      <div class="message-card glass-card">
+        <p class="message-text">
+          <span class="typewriter-wrapper" id="typewriter-wrapper" aria-live="polite"></span>
+          <span class="typewriter-caret" id="typewriter-caret" aria-hidden="true"></span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 2b: More romantic lines (scroll to discover) -->
+    <section class="section highlights" id="highlights">
+      <h2 class="section-heading">A little more for you</h2>
+      <div class="highlights-grid">
+        <div class="highlight-card glass-card">
+          <span class="highlight-emoji" aria-hidden="true">✨</span>
+          <p>You deserve to feel chosen.</p>
+        </div>
+        <div class="highlight-card glass-card">
+          <span class="highlight-emoji" aria-hidden="true">💕</span>
+          <p>This moment is only for you.</p>
+        </div>
+        <div class="highlight-card glass-card">
+          <span class="highlight-emoji" aria-hidden="true">🌹</span>
+          <p>Made with a little extra love.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Interactive moment -->
+    <section class="section interactive" id="interactive">
+      <h2 class="section-heading">One more surprise</h2>
+      <div class="interactive-card glass-card">
+        <p class="interactive-tease">You're going to love this.</p>
+        <button type="button" class="cta-button" id="cta-button">
+          Touch to Feel the Moment 💕
+        </button>
+      </div>
+      <div class="heart-burst-container" id="heart-burst-container" aria-hidden="true"></div>
+      <div class="glow-pulse" id="glow-pulse" aria-hidden="true"></div>
+    </section>
+
+    <!-- Section 4: Finale (3D heart) — "yours only" messaging -->
+    <section class="section finale" id="finale">
+      <div class="finale-heart-wrapper" aria-hidden="true">
+        <div class="finale-heart-3d">
+          <span class="finale-heart" aria-hidden="true">❤️</span>
+        </div>
+      </div>
+      <h2 class="finale-title">This could be yours</h2>
+      <p class="finale-subtext finale-subtext-main">Made only for you — because you're worth it.</p>
+      <p class="finale-subtext finale-subtext-tag">A small digital moment that feels real. Yours alone.</p>
+    </section>
+  </main>
+
+  <!-- Cursor-follow hearts (desktop only, injected by JS) -->
+  <div class="cursor-hearts" id="cursor-hearts" aria-hidden="true"></div>
+
+  <!-- Click ripple container -->
+  <div class="ripple-container" id="ripple-container" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
